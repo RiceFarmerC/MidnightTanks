@@ -344,7 +344,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -357,7 +357,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 100000
+  m_Intensity: 3.784434
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -434,7 +434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Intensity: 100000
+  m_Intensity: 3.784434
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -1465,6 +1465,181 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
   m_PVRTiledBaking: 0
+--- !u!1 &1138168668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1138168670}
+  - component: {fileID: 1138168669}
+  m_Layer: 0
+  m_Name: Lake
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1138168669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138168668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93eb560ae5ebcd8459ef03cd3eccbd16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowColorSettings: 1
+  ShowExpertColorSettings: 0
+  Transparent: 10
+  WaterColor: {r: 0, g: 0.5370102, b: 0.6981132, a: 1}
+  TurbidityColor: {r: 0.039215688, g: 0.43137255, b: 0.39215687, a: 1}
+  Turbidity: 0.25
+  ShowWaves: 1
+  ShowExpertWavesSettings: 0
+  FFT_SimulationSize: 256
+  UseMultipleSimulations: 0
+  WindSpeed: 1
+  WindRotation: 0
+  WindTurbulence: 0.75
+  TimeScale: 1
+  ReflectionProfile: 2
+  ShowReflectionSettings: 0
+  ShowExpertReflectionSettings: 0
+  ReflectionMode: 2
+  CubemapUpdateInterval: 6
+  CubemapCullingMask: 32
+  CubemapReflectionResolutionQuality: 512
+  PlanarReflectionResolutionQuality: 512
+  ScreenSpaceReflectionResolutionQuality: 50
+  UsePlanarCubemapReflection: 1
+  ReflectionClipPlaneOffset: 0.0085
+  ReflectioDepthHolesFillDistance: 3
+  UseAnisotropicReflections: 1
+  AnisotropicReflectionsHighQuality: 0
+  AnisotropicReflectionsScale: 0.55
+  ReflectSun: 1
+  ReflectedSunCloudinessStrength: 0.04
+  ReflectedSunStrength: 1
+  RefractionProfile: 2
+  ShowRefractionSettings: 0
+  ShowExpertRefractionSettings: 0
+  RefractionMode: 1
+  RefractionAproximatedDepth: 2
+  RefractionSimpleStrength: 0.25
+  UseRefractionDispersion: 1
+  RefractionDispersionStrength: 0.35
+  VolumetricLightProfile: 2
+  UseVolumetricLight: 1
+  ShowVolumetricLightSettings: 0
+  ShowExpertVolumetricLightSettings: 0
+  VolumetricLightResolutionQuality: 50
+  VolumetricLightIteration: 6
+  VolumetricLightBlurRadius: 1
+  VolumetricLightFilter: 0
+  FlowmapProfile: 2
+  UseFlowMap: 0
+  ShowFlowMap: 0
+  ShowExpertFlowmapSettings: 0
+  FlowMapInEditMode: 0
+  FlowMapAreaPosition: {x: 0, y: 0, z: 0}
+  FlowMapAreaSize: 200
+  FlowMapTextureResolution: 4096
+  FlowMapBrushStrength: 0.75
+  FlowMapSpeed: 1
+  UseFluidsSimulation: 0
+  FluidsAreaSize: 35
+  FluidsSimulationIterrations: 2
+  FluidsTextureSize: 1536
+  FluidsSimulationFPS: 60
+  FluidsSpeed: 1
+  FluidsFoamStrength: 0.5
+  DynamicWavesProfile: 2
+  UseDynamicWaves: 1
+  ShowDynamicWaves: 0
+  ShowExpertDynamicWavesSettings: 0
+  DynamicWavesAreaSize: 50
+  DynamicWavesSimulationFPS: 60
+  DynamicWavesResolutionPerMeter: 34
+  DynamicWavesPropagationSpeed: 1
+  UseDynamicWavesRainEffect: 0
+  DynamicWavesRainStrength: 0.2
+  ShorelineProfile: 2
+  UseShorelineRendering: 1
+  ShowShorelineMap: 0
+  ShowExpertShorelineSettings: 0
+  FoamLodQuality: 1
+  FoamCastShadows: 1
+  FoamReceiveShadows: 1
+  ShorelineInEditMode: 0
+  ShorelineAreaPosition: {x: 0, y: 0, z: 0}
+  ShorelineAreaSize: 512
+  ShorelineCurvedSurfacesQuality: 1
+  CausticProfile: 2
+  UseCausticEffect: 1
+  ShowCausticEffectSettings: 0
+  ShowExpertCausticEffectSettings: 0
+  UseCausticBicubicInterpolation: 0
+  UseCausticDispersion: 1
+  CausticTextureSize: 768
+  CausticMeshResolution: 320
+  CausticActiveLods: 4
+  CausticStrength: 1
+  UseDepthCausticScale: 0
+  CausticDepthScaleInEditMode: 0
+  CausticDepthScale: 1
+  CausticOrthoDepthPosition: {x: Infinity, y: Infinity, z: Infinity}
+  CausticOrthoDepthAreaSize: 512
+  CausticOrthoDepthTextureResolution: 2048
+  UseUnderwaterEffect: 1
+  ShowUnderwaterEffectSettings: 0
+  UseUnderwaterBlur: 0
+  UnderwaterBlurRadius: 1.5
+  MeshProfile: 2
+  ShowMeshSettings: 1
+  ShowExpertMeshSettings: 0
+  SplineMeshInEditMode: 0
+  WaterMeshType: 1
+  RiverSplineNormalOffset: 1
+  RiverSplineVertexCountBetweenPoints: 20
+  CustomMesh: {fileID: 0}
+  InfiniteMeshQuality: 21
+  FiniteMeshQuality: 37
+  MeshSize: {x: 900, y: 150, z: 900}
+  UseTesselation: 1
+  TesselationFactor: 0.75
+  TesselationInfiniteMeshMaxDistance: 1000
+  TesselationOtherMeshMaxDistance: 100
+  RenderingProfile: 2
+  ShowRendering: 0
+  ShowExpertRenderingSettings: 0
+  UseFiltering: 1
+  UseAnisotropicFiltering: 0
+  DrawToPosteffectsDepth: 0
+  EnableWaterSurfaceDataComputation: 0
+  UseNetworkTime: 0
+  NetworkTime: 0
+  _waterGUID: b412493b30d9d6c45bfe7e6e376a3f01
+--- !u!4 &1138168670
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138168668}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 551, y: 87, z: 1336}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1468846139
 GameObject:
   m_ObjectHideFlags: 0
