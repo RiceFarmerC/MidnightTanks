@@ -16,8 +16,6 @@ public class TankMovement : MonoBehaviour
 
         transform.Rotate(0, horizontalInput * Time.deltaTime * rotationSpeed, 0);
 
-        //Vector3 movement = new Vector3(horizontalInput, 0.0f, verticalInput);
-
         transform.Translate(0, 0, verticalInput * movementSpeed * Time.deltaTime);
     }
 }
