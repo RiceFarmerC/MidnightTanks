@@ -11,7 +11,7 @@ public class Shooting : MonoBehaviour
     public float despawnTime = 3.0f;
 
     public bool shootAble = true;
-    public float waitBeforeNextShot = 0.25f;
+    public float waitBeforeNextShot = 20.0f;
 
     private void Update ()
     {
@@ -34,7 +34,7 @@ public class Shooting : MonoBehaviour
     void Shoot ()
     {
         var bullet = Instantiate (theBullet, barrelEnd.position, barrelEnd.rotation);
-        bullet.GetComponent<Rigidbody> ().velocity = bullet.transform.forward * bulletSpeed;
+        bullet.GetComponent<Rigidbody> ().velocity = -barrelEnd.transform.forward * bulletSpeed;
 
         Destroy (bullet, despawnTime);
     }
