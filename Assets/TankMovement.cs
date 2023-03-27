@@ -5,23 +5,19 @@ using UnityEngine;
 public class TankMovement : MonoBehaviour
 {
 
-    public float speed = 5.0f;
+    public float movementSpeed = 25f;
+    public float rotationSpeed = 200f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
 
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(horizontalInput, 0.0f, verticalInput);
+        transform.Rotate(0, horizontalInput * Time.deltaTime * rotationSpeed, 0);
 
-        transform.position += movement * speed * Time.deltaTime;
+        //Vector3 movement = new Vector3(horizontalInput, 0.0f, verticalInput);
+
+        transform.Translate(0, 0, verticalInput * movementSpeed * Time.deltaTime);
     }
 }
