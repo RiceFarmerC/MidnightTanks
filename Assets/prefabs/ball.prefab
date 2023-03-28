@@ -129,6 +129,8 @@ GameObject:
   - component: {fileID: -7616002406461766350}
   - component: {fileID: 6983862560226041562}
   - component: {fileID: 3164158964119551814}
+  - component: {fileID: -5428033598798047351}
+  - component: {fileID: 7414783569781423950}
   m_Layer: 0
   m_Name: ball
   m_TagString: Untagged
@@ -288,7 +290,7 @@ Light:
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.5, y: 0.5}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
+  m_ColorTemperature: 3500
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 100}
   m_UseBoundingSphereOverride: 0
@@ -417,3 +419,31 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
+--- !u!114 &-5428033598798047351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221972126007826973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 731d394bdbd795f4f8dd8736d50dea1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7414783569781423950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9221972126007826973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d3be821675e35d46887d9b4427cb812, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Size: 10
+  Strength: 1
+  Pressure: 0
+  Offset: {x: 0, y: 0, z: 0}
