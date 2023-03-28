@@ -99,7 +99,7 @@ MonoBehaviour:
     m_Value: {fileID: 8900000, guid: a1d14e7d8cacf144982684b699e709b5, type: 3}
   groundEmissionMultiplier:
     m_OverrideState: 0
-    m_Value: 1
+    m_Value: 0
   planetRotation:
     m_OverrideState: 0
     m_Value: {x: 0, y: 0, z: 0}
@@ -108,7 +108,7 @@ MonoBehaviour:
     m_Value: {fileID: 8900000, guid: a1d14e7d8cacf144982684b699e709b5, type: 3}
   spaceEmissionMultiplier:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 3
   spaceRotation:
     m_OverrideState: 0
     m_Value: {x: 0, y: 0, z: 0}
