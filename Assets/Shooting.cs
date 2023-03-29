@@ -12,11 +12,15 @@ public class Shooting : MonoBehaviour
 
     public bool shootAble = true;
     public float waitBeforeNextShot = 20.0f;
+    
+    public bool isGamePaused = false;
+
 
     private void Update ()
     {
         if (Input.GetKey (KeyCode.Mouse0))
         {
+            if (isGamePaused) return;
             if (shootAble)
             {
                 shootAble = false;
