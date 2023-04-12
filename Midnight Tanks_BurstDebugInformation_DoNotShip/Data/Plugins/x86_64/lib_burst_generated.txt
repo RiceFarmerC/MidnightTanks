@@ -1,4 +1,4 @@
-Library: D:\jing7\Documents\GitHub\MidnightTanks\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
+Library: D:\jing7\Documents\GitHub\MidnightTanks2\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
 --platform=Windows
 --backend=burst-llvm-14
 --target=AVX2
@@ -110,20 +110,20 @@ Library: D:\jing7\Documents\GitHub\MidnightTanks\Temp\StagingArea\Data\Plugins\x
 --compilation-defines=ENABLE_LEGACY_INPUT_MANAGER
 --compilation-defines=TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 --compilation-defines=UNITY_POST_PROCESSING_STACK_V2
+--compilation-defines=ENABLE_VR_MODULE
+--compilation-defines=ENABLE_XR_MODULE
+--compilation-defines=ENABLE_INPUT_SYSTEM_PACKAGE
+--compilation-defines=CSHARP_7_OR_LATER
+--compilation-defines=CSHARP_7_3_OR_NEWER
+--compilation-defines=HDRP_1_OR_NEWER
+--compilation-defines=REFLECTION_PROBE_UPDATE_CACHED_DATA_AVAILABLE
+--compilation-defines=ENABLE_MATHEMATICS_1_2_1
+--compilation-defines=ENABLE_BURST_1_5_0_OR_NEWER
 --compilation-defines=PACKAGE_PHYSICS
 --compilation-defines=PACKAGE_PHYSICS2D
 --compilation-defines=PACKAGE_TILEMAP
 --compilation-defines=PACKAGE_ANIMATION
 --compilation-defines=PACKAGE_UITOOLKIT
---compilation-defines=CSHARP_7_OR_LATER
---compilation-defines=CSHARP_7_3_OR_NEWER
---compilation-defines=ENABLE_VR_MODULE
---compilation-defines=ENABLE_XR_MODULE
---compilation-defines=ENABLE_INPUT_SYSTEM_PACKAGE
---compilation-defines=HDRP_1_OR_NEWER
---compilation-defines=REFLECTION_PROBE_UPDATE_CACHED_DATA_AVAILABLE
---compilation-defines=ENABLE_MATHEMATICS_1_2_1
---compilation-defines=ENABLE_BURST_1_5_0_OR_NEWER
 --compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_VR
 --compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_XR
 --compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_PHYSICS
@@ -161,8 +161,8 @@ Library: D:\jing7\Documents\GitHub\MidnightTanks\Temp\StagingArea\Data\Plugins\x
 --compilation-defines=VFX_HAS_INPUT_SYSTEM_PACKAGE
 --linker-options=PdbAltPath="Midnight Tanks_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=D:\jing7\Documents\GitHub\MidnightTanks\Temp\Burst
---output=D:\jing7\Documents\GitHub\MidnightTanks\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
+--temp-folder=D:\jing7\Documents\GitHub\MidnightTanks2\Temp\Burst
+--output=D:\jing7\Documents\GitHub\MidnightTanks2\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 --pdb-search-paths=Temp/ManagedSymbols/
 
@@ -293,20 +293,20 @@ Library: D:\jing7\Documents\GitHub\MidnightTanks\Temp\StagingArea\Data\Plugins\x
 --compilation-defines=ENABLE_LEGACY_INPUT_MANAGER
 --compilation-defines=TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 --compilation-defines=UNITY_POST_PROCESSING_STACK_V2
+--compilation-defines=ENABLE_VR_MODULE
+--compilation-defines=ENABLE_XR_MODULE
+--compilation-defines=ENABLE_INPUT_SYSTEM_PACKAGE
+--compilation-defines=CSHARP_7_OR_LATER
+--compilation-defines=CSHARP_7_3_OR_NEWER
+--compilation-defines=HDRP_1_OR_NEWER
+--compilation-defines=REFLECTION_PROBE_UPDATE_CACHED_DATA_AVAILABLE
+--compilation-defines=ENABLE_MATHEMATICS_1_2_1
+--compilation-defines=ENABLE_BURST_1_5_0_OR_NEWER
 --compilation-defines=PACKAGE_PHYSICS
 --compilation-defines=PACKAGE_PHYSICS2D
 --compilation-defines=PACKAGE_TILEMAP
 --compilation-defines=PACKAGE_ANIMATION
 --compilation-defines=PACKAGE_UITOOLKIT
---compilation-defines=CSHARP_7_OR_LATER
---compilation-defines=CSHARP_7_3_OR_NEWER
---compilation-defines=ENABLE_VR_MODULE
---compilation-defines=ENABLE_XR_MODULE
---compilation-defines=ENABLE_INPUT_SYSTEM_PACKAGE
---compilation-defines=HDRP_1_OR_NEWER
---compilation-defines=REFLECTION_PROBE_UPDATE_CACHED_DATA_AVAILABLE
---compilation-defines=ENABLE_MATHEMATICS_1_2_1
---compilation-defines=ENABLE_BURST_1_5_0_OR_NEWER
 --compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_VR
 --compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_XR
 --compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_PHYSICS
@@ -344,8 +344,8 @@ Library: D:\jing7\Documents\GitHub\MidnightTanks\Temp\StagingArea\Data\Plugins\x
 --compilation-defines=VFX_HAS_INPUT_SYSTEM_PACKAGE
 --linker-options=PdbAltPath="Midnight Tanks_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=D:\jing7\Documents\GitHub\MidnightTanks\Temp\Burst
---output=D:\jing7\Documents\GitHub\MidnightTanks\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
+--temp-folder=D:\jing7\Documents\GitHub\MidnightTanks2\Temp\Burst
+--output=D:\jing7\Documents\GitHub\MidnightTanks2\Temp\StagingArea\Data\Plugins\x86_64\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 --pdb-search-paths=Temp/ManagedSymbols/
 

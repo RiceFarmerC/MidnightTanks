@@ -14,6 +14,19 @@ public class Shooting : MonoBehaviour
     public float waitBeforeNextShot = 20.0f;
     
     public bool isGamePaused = false;
+    // Add these lines
+    public AudioClip shootingSound;
+    private AudioSource audioSource;
+
+    private void Awake()
+    {
+        // Add this line
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
+    }
 
 
     private void Update ()
@@ -41,5 +54,15 @@ public class Shooting : MonoBehaviour
         bullet.GetComponent<Rigidbody> ().velocity = -barrelEnd.transform.forward * bulletSpeed;
 
         Destroy (bullet, despawnTime);
+        // Add this line
+        PlayShootingSound();
+    }
+       // Add this method
+    void PlayShootingSound()
+    {
+        if (shootingSound != null)
+        {
+            audioSource.PlayOneShot(shootingSound);
+        }
     }
 }
