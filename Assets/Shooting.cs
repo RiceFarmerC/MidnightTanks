@@ -1,17 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shooting : MonoBehaviour
 {
     public GameObject theBullet;
     public Transform barrelEnd;
+    ReloadTimeScript timer;
 
     public int bulletSpeed;
     public float despawnTime = 3.0f;
 
     public bool shootAble = true;
-    public float waitBeforeNextShot = 20.0f;
+    public float reload = 3f;
     
     public bool isGamePaused = false;
     // Add these lines
@@ -26,6 +28,7 @@ public class Shooting : MonoBehaviour
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
+        timer = FindFirstObjectByType<ReloadTimeScript>();
     }
 
 
@@ -37,6 +40,7 @@ public class Shooting : MonoBehaviour
             if (shootAble)
             {
                 shootAble = false;
+                timer.reloadStart = true;
                 Shoot ();
                 StartCoroutine (ShootingYield ());
             }
@@ -45,7 +49,8 @@ public class Shooting : MonoBehaviour
 
     IEnumerator ShootingYield ()
     {
-        yield return new WaitForSeconds (waitBeforeNextShot);
+        yield return new WaitForSeconds (reload);
+        timer.reloadStart = false;
         shootAble = true;
     }
     void Shoot ()
@@ -65,4 +70,5 @@ public class Shooting : MonoBehaviour
             audioSource.PlayOneShot(shootingSound);
         }
     }
+
 }
