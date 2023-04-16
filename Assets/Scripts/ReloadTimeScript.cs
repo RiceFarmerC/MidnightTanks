@@ -25,12 +25,20 @@ public class ReloadTimeScript : MonoBehaviour
             reload = time.reload;
             reloadText.color = Color.green;
             reloadText.text = reload.ToString("F2");
+            time.shootAble = true;
         }
         else
         {
-            reload = reload - Time.deltaTime;
-            reloadText.color = Color.red;
-            reloadText.text = reload.ToString("F2");
+            if (reload < 0f)
+            {
+                reloadStart = false;
+            }
+            else
+            {
+                reload = reload - Time.deltaTime;
+                reloadText.color = Color.red;
+                reloadText.text = reload.ToString("F2");
+            }
         }
     }
 }
