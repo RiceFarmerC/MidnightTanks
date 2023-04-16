@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class HealthBarUI : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // public GameObject healthUIPrefab;
+
+    // public Transform barPoint;
+
+    // Image healthSlider;
+    // Transform UIbar;
+    // Transform cam;
+
 }
