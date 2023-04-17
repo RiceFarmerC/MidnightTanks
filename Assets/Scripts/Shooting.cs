@@ -51,6 +51,7 @@ public class Shooting : MonoBehaviour
     {
         yield return new WaitForSeconds (reload);
         timer.reloadStart = false;
+        shootAble = true;
     }
     void Shoot ()
     {

@@ -18,7 +18,7 @@ public class ShellCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "terrain")
+        if (collision.gameObject.tag == "terrain" || collision.gameObject.tag == "tank")
         {
             Destroy(gameObject);
         }
