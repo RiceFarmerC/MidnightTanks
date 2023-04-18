@@ -4028,7 +4028,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266051868}
-  m_LocalRotation: {x: 0.30785403, y: 0.63801366, z: -0.30968627, w: 0.6342389}
+  m_LocalRotation: {x: 0.307854, y: 0.6380137, z: -0.3096863, w: 0.63423884}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6810,7 +6810,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3370133124117772062}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.7763568e-15, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.9999999, y: 0.99999976, z: 0.99999976}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7605,7 +7605,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522761874477216886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: -0.11314522, z: 0}
+  m_LocalPosition: {x: 0, y: -0, z: 0.09}
   m_LocalScale: {x: 0.9039955, y: 0.81359595, z: 0.48437065}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7626,7 +7626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75433dbb6a026c548bab0d2b5e440a92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 55
+  rotationSpeed: 10
 --- !u!23 &8577209424651908232
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7677,7 +7677,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6706875108188936014}
   m_LocalRotation: {x: -1.7763573e-15, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.7763568e-15, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.9999999, y: 0.99999976, z: 0.99999976}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7858,6 +7858,7 @@ GameObject:
   - component: {fileID: 2318168981888425127}
   - component: {fileID: 6579396743749341432}
   - component: {fileID: 6867615675360516410}
+  - component: {fileID: 9072369989350235723}
   m_Layer: 0
   m_Name: BottomCarriage
   m_TagString: bottomCarriage
@@ -7865,6 +7866,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &9072369989350235723
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9072369989350235722}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6167407364757592904, guid: 3c8898f0f2c58cc4cbc9aec35ed84e26, type: 3}
 --- !u!4 &9184892790759884382
 Transform:
   m_ObjectHideFlags: 0
