@@ -22,6 +22,7 @@ public class GameOver : MonoBehaviour
         if (tankStats.CurrentHealth == 0)
         {
              tankStats.CurrentHealth = 100;
+             
              GameOver1();
         }
            

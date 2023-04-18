@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TankStats : MonoBehaviour
 {
+    public event Action<int, int> UpdateHealthBarOnAttack; 
     public TankData_SO tankData;
     public AttackData_OS attackData;
 
@@ -63,6 +65,7 @@ public class TankStats : MonoBehaviour
         CurrentHealth = Mathf.Max(CurrentHealth - damage, 0);
         
         //TODO: update UI
+        UpdateHealthBarOnAttack?.Invoke(CurrentHealth, MaxHealth);
     }
 
     private int CurrentDamage()
