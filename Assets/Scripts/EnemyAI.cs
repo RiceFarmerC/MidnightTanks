@@ -28,11 +28,19 @@ public class EnemyAI : MonoBehaviour
     //States
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
+    
+    //TankStats
+    public TankStats tankStats; 
+    
+    //Attack target
+    private GameObject attackTarget;
 
     private void Awake()
     {
+        tankStats = GetComponent<TankStats>();
         player = GameObject.Find("Player Tank").transform;
         agent = GetComponent<NavMeshAgent>();
+        
     }
 
     private void Update()
@@ -85,12 +93,16 @@ public class EnemyAI : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-            ///Attack code here
+            
+            // var tankStats = GetComponent<TankStats>();
+            // Debug.Log(tankStats);
+            //Attack code here
             var bullet = Instantiate(theBullet, barrelEnd.position, barrelEnd.rotation);
             bullet.GetComponent<Rigidbody>().velocity = -barrelEnd.transform.forward * bulletSpeed;
-
+            
+            bullet.GetComponent<ShellCollision>().attacker = tankStats;
             Destroy(bullet, despawnTime);
-            ///End of attack code
+            //End of attack code
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
@@ -101,4 +113,13 @@ public class EnemyAI : MonoBehaviour
         alreadyAttacked = false;
     }
 
+    // private void EventAttack(GameObject target)
+    // {
+    //     if (target != null)
+    //     {
+    //         attackTarget = target;
+    //         Debug.Log("attack " + attackTarget);
+    //     }
+    // }
+    
 }

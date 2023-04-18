@@ -6,22 +6,22 @@ using UnityEngine.UI;
 public class PlayerHealthUI : MonoBehaviour
 {
 
-    // // public GameObject playerHealthUIPrefeb;
-
-    // Image healthSlider;
-
-    // void Awake()
-    // {
-    //     healthSlider = Transform.GetChild(0).GetChild(0).GetComponent<Imgae>();
-    // }
-
-    // void Update()
-    // {
-
-    // }
-
-    // void UpdateHealth()
-    // {
-    //     // float sliderPercent=(float)
-    // }
+     // // public GameObject playerHealthUIPrefeb;
+     // //
+     // Image healthSlider;
+     //
+     // void Awake()
+     // {
+     //     healthSlider = transform.GetChild(0).GetChild(0).GetComponent<Image>();
+     // }
+     //
+     // void Update()
+     // {
+     //
+     // }
+     //
+     // void UpdateHealth()
+     // {
+     //     float sliderPercent=(float)
+     // }
 }

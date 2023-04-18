@@ -431,6 +431,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 731d394bdbd795f4f8dd8736d50dea1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootingScript: {fileID: 700244987310288302, guid: bd7c90c3a2edfa346be39d71564f7ea0, type: 3}
+  targetStats: {fileID: 700244987310288300, guid: bd7c90c3a2edfa346be39d71564f7ea0, type: 3}
 --- !u!114 &7414783569781423950
 MonoBehaviour:
   m_ObjectHideFlags: 0

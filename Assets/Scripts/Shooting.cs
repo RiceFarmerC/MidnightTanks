@@ -19,10 +19,13 @@ public class Shooting : MonoBehaviour
     // Add these lines
     public AudioClip shootingSound;
     private AudioSource audioSource;
+    
+    private TankStats tankStats; 
+    
 
     private void Awake()
     {
-        // Add this line
+        tankStats = GetComponent<TankStats>();
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
         {
@@ -55,11 +58,15 @@ public class Shooting : MonoBehaviour
     }
     void Shoot ()
     {
+        
+
         var bullet = Instantiate (theBullet, barrelEnd.position, barrelEnd.rotation);
         bullet.GetComponent<Rigidbody> ().velocity = -barrelEnd.transform.forward * bulletSpeed;
-
+        
+        bullet.GetComponent<ShellCollision>().attacker = tankStats;
+        
         Destroy (bullet, despawnTime);
-        // Add this line
+
         PlayShootingSound();
     }
        // Add this method

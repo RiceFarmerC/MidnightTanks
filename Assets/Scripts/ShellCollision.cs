@@ -1,26 +1,34 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
 public class ShellCollision : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    // private void OnCollisionEnter(Collision collision)
+    // {
+    //     if (collision.gameObject.CompareTag("tank"))
+    //     {
+    //         Debug.Log("Bullet hit the target!");
+    //         Destroy(gameObject);
+    //     }
+    //     
+    // }
+    
+    public TankStats attacker;
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "terrain" || collision.gameObject.tag == "tank")
+        var target = collision.gameObject.GetComponent<TankStats>();
+        if (target != null)
         {
-            Destroy(gameObject);
+            Debug.Log("hit");
+            Debug.Log("attack " + target);
+            Debug.Log("Attacker " + attacker);
+            target.TakeDamage(attacker, target);
         }
+
+        Destroy(gameObject);
     }
+    
 }
