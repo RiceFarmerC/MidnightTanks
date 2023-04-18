@@ -14,8 +14,8 @@ public class TankMovement : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        transform.Rotate(0, horizontalInput * Time.deltaTime * rotationSpeed, 0);
+        transform.Rotate(0, 0, horizontalInput * Time.deltaTime * rotationSpeed);
 
-        transform.Translate(0, 0, verticalInput * movementSpeed * Time.deltaTime);
+        transform.Translate(verticalInput * movementSpeed * Time.deltaTime,0, 0 );
     }
 }
