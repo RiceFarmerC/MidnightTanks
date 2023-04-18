@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36c915d9f2c894140b54f6f856ec5feb, type: 3}
   m_Name: TankAttackData
   m_EditorClassIdentifier: 
+  minDamage: 4
+  maxDamage: 6
