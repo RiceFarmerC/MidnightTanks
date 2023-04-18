@@ -113,13 +113,6 @@ public class EnemyAI : MonoBehaviour
         alreadyAttacked = false;
     }
 
-    // private void EventAttack(GameObject target)
-    // {
-    //     if (target != null)
-    //     {
-    //         attackTarget = target;
-    //         Debug.Log("attack " + attackTarget);
-    //     }
-    // }
+  
     
 }
