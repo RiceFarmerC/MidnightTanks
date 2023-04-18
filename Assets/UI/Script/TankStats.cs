@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TankStats : MonoBehaviour
 {
-    public TankData_SO TankData;
+    public TankData_SO tankData;
     public AttackData_OS attackData;
 
     #region Read from Data_SO
@@ -13,10 +13,10 @@ public class TankStats : MonoBehaviour
     {
         get
         {
-            if (TankData != null) return TankData.maxHealth;
+            if (tankData != null) return tankData.maxHealth;
             else return 0;
         }
-        set { TankData.maxHealth = value; }
+        set { tankData.maxHealth = value; }
 
     }
 
@@ -24,10 +24,10 @@ public class TankStats : MonoBehaviour
     {
         get
         {
-            if (TankData != null) return TankData.currentHealth;
+            if (tankData != null) return tankData.currentHealth;
             else return 0;
         }
-        set { TankData.currentHealth = value; }
+        set { tankData.currentHealth = value; }
 
     }
 
@@ -35,10 +35,10 @@ public class TankStats : MonoBehaviour
     {
         get
         {
-            if (TankData != null) return TankData.baseDefence;
+            if (tankData != null) return tankData.baseDefence;
             else return 0;
         }
-        set { TankData.baseDefence = value; }
+        set { tankData.baseDefence = value; }
 
     }
 
@@ -46,10 +46,10 @@ public class TankStats : MonoBehaviour
     {
         get
         {
-            if (TankData != null) return TankData.currentDefence;
+            if (tankData != null) return tankData.currentDefence;
             else return 0;
         }
-        set { TankData.currentDefence = value; }
+        set { tankData.currentDefence = value; }
 
     }
 
