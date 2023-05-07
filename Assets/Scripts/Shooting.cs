@@ -61,7 +61,7 @@ public class Shooting : MonoBehaviour
         
 
         var bullet = Instantiate (theBullet, barrelEnd.position, barrelEnd.rotation);
-        bullet.GetComponent<Rigidbody> ().velocity = -barrelEnd.transform.forward * bulletSpeed;
+        bullet.GetComponent<Rigidbody> ().velocity = barrelEnd.transform.forward * bulletSpeed;
         
         bullet.GetComponent<ShellCollision>().attacker = tankStats;
         
