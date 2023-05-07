@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Tank Data
   m_EditorClassIdentifier: 
   maxHealth: 100
-  currentHealth: 98
+  currentHealth: 70
   baseDefence: 2
   currentDefence: 2

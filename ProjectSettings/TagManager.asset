@@ -6,6 +6,10 @@ TagManager:
   tags:
   - terrain
   - tank
+  - barrelTip
+  - topCarriage
+  - barrel
+  - bottomCarriage
   layers:
   - Default
   - TransparentFX
@@ -14,7 +18,7 @@ TagManager:
   - Water
   - UI
   - terrain
-  - player
+  - Player Tank
   - enemy
   - 
   - 

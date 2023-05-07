@@ -38,7 +38,7 @@ public class EnemyAI : MonoBehaviour
     private void Awake()
     {
         tankStats = GetComponent<TankStats>();
-        player = GameObject.Find("Player Tank").transform;
+        player = GameObject.Find("Player Tank with Turret Rotation").transform;
         agent = GetComponent<NavMeshAgent>();
         
     }
