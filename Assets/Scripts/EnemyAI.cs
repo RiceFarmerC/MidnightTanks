@@ -98,7 +98,7 @@ public class EnemyAI : MonoBehaviour
             // Debug.Log(tankStats);
             //Attack code here
             var bullet = Instantiate(theBullet, barrelEnd.position, barrelEnd.rotation);
-            bullet.GetComponent<Rigidbody>().velocity = -barrelEnd.transform.forward * bulletSpeed;
+            bullet.GetComponent<Rigidbody>().velocity = barrelEnd.transform.forward * bulletSpeed;
             
             bullet.GetComponent<ShellCollision>().attacker = tankStats;
             Destroy(bullet, despawnTime);
