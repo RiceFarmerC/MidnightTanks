@@ -5,9 +5,16 @@ using UnityEngine;
 
 public class TankStats : MonoBehaviour
 {
-    public event Action<int, int> UpdateHealthBarOnAttack; 
+    public event Action<int, int> UpdateHealthBarOnAttack;
+    public TankData_SO templateData;
     public TankData_SO tankData;
     public AttackData_OS attackData;
+
+    void Awake()
+    {
+        if (templateData != null)
+            tankData = Instantiate(templateData);
+    }
 
     #region Read from Data_SO
 
@@ -74,7 +81,6 @@ public class TankStats : MonoBehaviour
         return (int)coreDamage;
     }
 
-
-#endregion
+    #endregion
     
 }

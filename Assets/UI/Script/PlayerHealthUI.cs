@@ -14,6 +14,7 @@ public class PlayerHealthUI : MonoBehaviour
      void Awake()
      {
          // tankStats = GetComponent<TankStats>();
+         tankStats.CurrentHealth = tankStats.MaxHealth;
          healthSlider = transform.GetChild(0).GetChild(0).GetComponent<Image>();
      }
      

@@ -24,6 +24,7 @@ public class HealthBarUI : MonoBehaviour
     private void Awake()
     {
         currentStats = GetComponent<TankStats>();
+        currentStats.CurrentHealth = currentStats.MaxHealth;
         currentStats.UpdateHealthBarOnAttack += UpdateHealthBar;
         healthSlider = transform.GetChild(0).GetChild(0).GetComponent<Image>();
         
