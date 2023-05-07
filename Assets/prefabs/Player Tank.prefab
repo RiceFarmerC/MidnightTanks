@@ -184,7 +184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6e685f1d43b2a748a9916adf1962c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TankData: {fileID: 11400000, guid: 8a7cf2989fdf0584db809a697b91667e, type: 2}
+  templateData: {fileID: 0}
+  tankData: {fileID: 11400000, guid: 8a7cf2989fdf0584db809a697b91667e, type: 2}
   attackData: {fileID: 11400000, guid: 2740aac3daf390d4c8dc50e20c730608, type: 2}
 --- !u!114 &700244987310288302
 MonoBehaviour:
