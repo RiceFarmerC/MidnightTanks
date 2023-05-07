@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6e685f1d43b2a748a9916adf1962c52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tankData: {fileID: 11400000, guid: 6d65ee8b0289bd748b8b6815142e4b79, type: 2}
+  templateData: {fileID: 11400000, guid: 6d65ee8b0289bd748b8b6815142e4b79, type: 2}
+  tankData: {fileID: 0}
   attackData: {fileID: 11400000, guid: 3f2e58c4fdebaa94bb310ac72ca19951, type: 2}
 --- !u!114 &199051956512872219
 MonoBehaviour:
@@ -171,9 +172,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30d31ee0ec7b0ca40ac0ec1a92f9a675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthUIPrefab: {fileID: 1736365256734083048, guid: 2407fdf4ba8c81649b6520cd5ef675e5, type: 3}
+  healthUIPrefab: {fileID: 4441847845053881607, guid: 2407fdf4ba8c81649b6520cd5ef675e5, type: 3}
   barPoint: {fileID: 3346720658255366948}
-  alwaysVisible: 0
+  alwaysVisible: 1
   visibleTime: 30
 --- !u!114 &199051956512872222
 MonoBehaviour:
@@ -842,14 +843,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199051957968061375}
-  m_LocalRotation: {x: -0.51083136, y: 0.49061492, z: 0.5040117, w: -0.494288}
-  m_LocalPosition: {x: 0.0821, y: -0.0001, z: 0.0483}
+  m_LocalRotation: {x: 0.49608183, y: 0.5038873, z: 0.5048008, w: 0.49515313}
+  m_LocalPosition: {x: 0.082100086, y: -0.00009992765, z: 0.048299998}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 199051957333623467}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0.598, y: 269.811, z: -91.717}
+  m_LocalEulerAnglesHint: {x: -1, y: 450, z: -269.89398}
 --- !u!33 &199051957968061368
 MeshFilter:
   m_ObjectHideFlags: 0
