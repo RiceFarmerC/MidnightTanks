@@ -6,11 +6,8 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
     public NavMeshAgent agent;
-
     public Transform player;
-
     public LayerMask whatIsGround, whatIsPlayer;
-
     public GameObject theBullet;
     public Transform barrelEnd;
     public int bulletSpeed;
@@ -35,6 +32,9 @@ public class EnemyAI : MonoBehaviour
     //Attack target
     private GameObject attackTarget;
 
+    // Boss flag
+    public bool isBoss = false;
+    
     private void Awake()
     {
         tankStats = GetComponent<TankStats>();
@@ -49,7 +49,10 @@ public class EnemyAI : MonoBehaviour
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-        if (!playerInSightRange && !playerInAttackRange) Patroling();
+        if (!isBoss) {
+            if (!playerInSightRange && !playerInAttackRange) Patroling();
+            
+        }
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInAttackRange && playerInSightRange) AttackPlayer();
     }
@@ -93,9 +96,6 @@ public class EnemyAI : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-            
-            // var tankStats = GetComponent<TankStats>();
-            // Debug.Log(tankStats);
             //Attack code here
             var bullet = Instantiate(theBullet, barrelEnd.position, barrelEnd.rotation);
             bullet.GetComponent<Rigidbody>().velocity = barrelEnd.transform.forward * bulletSpeed;
@@ -113,6 +113,4 @@ public class EnemyAI : MonoBehaviour
         alreadyAttacked = false;
     }
 
-  
-    
 }

@@ -174,7 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthUIPrefab: {fileID: 4441847845053881607, guid: 2407fdf4ba8c81649b6520cd5ef675e5, type: 3}
   barPoint: {fileID: 3346720658255366948}
-  alwaysVisible: 1
+  alwaysVisible: 0
   visibleTime: 30
 --- !u!114 &199051956512872222
 MonoBehaviour:

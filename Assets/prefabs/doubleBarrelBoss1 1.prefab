@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 776208354101984129}
   - component: {fileID: 776208354101984130}
   - component: {fileID: 776208354101984253}
+  - component: {fileID: 2053467202027995313}
   - component: {fileID: 776208354101984254}
   - component: {fileID: 776208354101984248}
   - component: {fileID: 776208354101984249}
@@ -157,6 +158,21 @@ MonoBehaviour:
   playerInSightRange: 0
   playerInAttackRange: 0
   tankStats: {fileID: 0}
+--- !u!114 &2053467202027995313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433696534748284631}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06594f0762e574a4f8df4d000b5c442c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossStats: {fileID: 776208354101984130}
+  healthBarPrefab: {fileID: 601712928573709210, guid: fd79c11f0e528da42bffba8d324a93cf, type: 3}
+  visibleTime: 30
 --- !u!114 &776208354101984254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,12 +180,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433696534748284631}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30d31ee0ec7b0ca40ac0ec1a92f9a675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthUIPrefab: {fileID: 1736365256734083048, guid: 2407fdf4ba8c81649b6520cd5ef675e5, type: 3}
+  healthUIPrefab: {fileID: 0}
   barPoint: {fileID: 0}
   alwaysVisible: 0
   visibleTime: 30
