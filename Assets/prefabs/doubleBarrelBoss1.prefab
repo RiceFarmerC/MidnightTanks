@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 2078869703279478307}
   - component: {fileID: 2078869703279478304}
   - component: {fileID: 2078869703279478367}
+  - component: {fileID: 2645298203070059497}
   - component: {fileID: 2078869703279478364}
   - component: {fileID: 2078869703279478362}
   - component: {fileID: 2078869703279478363}
@@ -241,6 +242,21 @@ MonoBehaviour:
   playerInSightRange: 0
   playerInAttackRange: 0
   tankStats: {fileID: 0}
+--- !u!114 &2645298203070059497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159898090338433909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06594f0762e574a4f8df4d000b5c442c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossStats: {fileID: 0}
+  alwaysVisible: 0
+  visibleTime: 0
 --- !u!114 &2078869703279478364
 MonoBehaviour:
   m_ObjectHideFlags: 0
