@@ -37,6 +37,10 @@ public class EnemyAI : MonoBehaviour
     
     public bool isBoss = false;
 
+    private bool isDead;
+    //drop Item
+    public GameObject dropItem;
+
     private void Awake()
     {
         tankStats = GetComponent<TankStats>();
@@ -47,6 +51,10 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
+        //check is dead
+        if (tankStats.CurrentHealth == 0)
+            // isDead = true;
+            Dead();
         //Check for sight and attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
@@ -60,6 +68,15 @@ public class EnemyAI : MonoBehaviour
             if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         }
         if (playerInAttackRange && playerInSightRange) AttackPlayer();
+    }
+
+    void Dead()
+    {
+        if (isDead) return;
+        isDead= true;
+        agent.enabled = false;
+        Instantiate(dropItem, transform.position, Quaternion.identity);
+        Destroy(gameObject, 1f);
     }
 
     private void Patroling()

@@ -69,7 +69,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 3.3, z: 8.5}
+  m_Size: {x: 5, y: 3.5, z: 10}
   m_Center: {x: 0, y: -0.7, z: -0.75}
 --- !u!54 &199051956512872197
 Rigidbody:
@@ -209,6 +209,7 @@ MonoBehaviour:
   playerInAttackRange: 0
   tankStats: {fileID: 0}
   isBoss: 0
+  dropItem: {fileID: 7569554536813642693, guid: 1102e1e2f42ce8a42842945f6e1dff86, type: 3}
 --- !u!1 &199051956621682566
 GameObject:
   m_ObjectHideFlags: 0
