@@ -608,7 +608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688cccafcac80074fbe33610a140091e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
+  agent: {fileID: 7702251258410277737}
   player: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
@@ -628,6 +628,7 @@ MonoBehaviour:
   playerInSightRange: 0
   playerInAttackRange: 0
   tankStats: {fileID: 0}
+  isBoss: 1
 --- !u!114 &7702251258410277743
 MonoBehaviour:
   m_ObjectHideFlags: 0

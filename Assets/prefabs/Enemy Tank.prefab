@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 199051956512872217}
-  player: {fileID: 0}
+  player: {fileID: 1686518417154596091, guid: 1510decdc9a07f440b0ad671bb2c6881, type: 3}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 80
@@ -208,6 +208,7 @@ MonoBehaviour:
   playerInSightRange: 0
   playerInAttackRange: 0
   tankStats: {fileID: 0}
+  isBoss: 0
 --- !u!1 &199051956621682566
 GameObject:
   m_ObjectHideFlags: 0

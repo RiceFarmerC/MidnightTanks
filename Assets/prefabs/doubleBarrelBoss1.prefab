@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 688cccafcac80074fbe33610a140091e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
+  agent: {fileID: 2078869703279478306}
   player: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
@@ -242,6 +242,7 @@ MonoBehaviour:
   playerInSightRange: 0
   playerInAttackRange: 0
   tankStats: {fileID: 0}
+  isBoss: 1
 --- !u!114 &2645298203070059497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,7 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossStats: {fileID: 0}
-  alwaysVisible: 0
+  healthBarPrefab: {fileID: 0}
   visibleTime: 0
 --- !u!114 &2078869703279478364
 MonoBehaviour:
