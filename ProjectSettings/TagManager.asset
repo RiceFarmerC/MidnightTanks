@@ -10,6 +10,7 @@ TagManager:
   - topCarriage
   - barrel
   - bottomCarriage
+  - PlayerTank
   layers:
   - Default
   - TransparentFX
