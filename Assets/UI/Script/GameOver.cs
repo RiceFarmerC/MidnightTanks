@@ -10,6 +10,7 @@ public class GameOver : MonoBehaviour
     public GameObject gameOverMenu;
     public bool isDead;
     public Shooting Shooting;
+    public  Win winTrigger;
 
     // public TankMovement TankMovement;
     // private void Awake()
@@ -19,11 +20,11 @@ public class GameOver : MonoBehaviour
 
     void Update()
     {
-        if (tankStats.CurrentHealth == 0)
+        if (tankStats.CurrentHealth == 0 || winTrigger.gameEnded == true)
         {
-             tankStats.CurrentHealth = 100;
+            tankStats.CurrentHealth = 100;
              
-             GameOver1();
+            GameOver1();
         }
            
     }
